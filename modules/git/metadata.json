@@ -1,0 +1,30 @@
+{
+  "author": "Yanis Guenane",
+  "dependencies": [
+    {
+      "version_requirement": ">= 0.1.0",
+      "name": "yguenane/devtools"
+    }
+  ],
+  "types": [
+
+  ],
+  "source": "https://github.com/Spredzy/puppet-git",
+  "project_page": "https://github.com/Spredzy/puppet-git",
+  "license": "GPLv3",
+  "version": "0.0.3",
+  "checksums": {
+    "Modulefile": "92a13ce74ee0ce634de197fa6f9d4952",
+    "manifests/init.pp": "19a75074a8da712dcac1d706ceaebf33",
+    "manifests/ssh.pp": "76798d0e5c9b8487ec851043b1ff4ce5",
+    "manifests/params.pp": "091f80b46287bff3b99632a8f4bc8d86",
+    "templates/git.erb": "07b7506561cc32ad7cbe5675f78be1f4",
+    "manifests/git.pp": "c8a7e791a6de354b7cd4c87b9d7bc8da",
+    "README.md": "59d331e1ce2f4ad5602f2a9ea4f2bb5e",
+    "lib/puppet/parser/functions/get_cwd_hash_path.rb": "2f90aa4f270447e35bc89e30f368060e",
+    "lib/facter/git_shell.rb": "ac7299a228cab3d2b6cbdfd032775522"
+  },
+  "description": "This is a module that installs git and configure it. As for now, two protocol can be used :\n* SSH : Git over ssh, this module manages the authorized_keys via hiera\n* Git : Git over git, this module manages the xinetd service in charge of running git daemon \n",
+  "name": "yguenane-git",
+  "summary": "A Git module"
+}

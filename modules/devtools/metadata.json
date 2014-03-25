@@ -1,0 +1,25 @@
+{
+  "author": "Yanis Guenane",
+  "dependencies": [
+    {
+      "version_requirement": ">= 0.0.3",
+      "name": "stahnma/epel"
+    }
+  ],
+  "types": [
+
+  ],
+  "source": "https://github.com/Spredzy/puppet-devtools",
+  "project_page": "https://github.com/Spredzy/puppet-devtools",
+  "license": "GPLv3",
+  "version": "0.1.0",
+  "checksums": {
+    "manifests/init.pp": "4fb8e2cf6cb8b056c8df9276a4d16703",
+    "Modulefile": "4aa9d5f4f96bc1f443584883ac34bb09",
+    "README.md": "f319898fb7be6511b7a60deef347b686",
+    "manifests/params.pp": "fa0053d4674e6d39fad57b303359485e"
+  },
+  "description": "A Puppet module thant install all necessary packages for compiling basic software",
+  "name": "yguenane-devtools",
+  "summary": "A Puppet module thant install all necessary packages for compiling basic software"
+}
