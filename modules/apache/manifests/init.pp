@@ -13,7 +13,7 @@ package {'Apache Web Server':
   before => File['httpd.conf'],
 }
   
-file {'httpd.conf':
+file {'/etc/httpd/conf/httpd.conf':
   ensure  => present,
   owner   => 'apache',
   group   => 'apache',
