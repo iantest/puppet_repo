@@ -10,14 +10,14 @@ case $operatingsystem {
 package {'Apache Web Server':
   name   => $apache,
   ensure => 'installed',
-  before => File['/etc/httpd/conf/httpd.conf'],
+  before => File['httpd.conf'],
 }
   
-file {'/etc/httpd/conf/httpd.conf':
-  ensure => present,
-  owner  => 'apache',
-  group  => 'apache',
-  source => '/root/examples/httpd.conf'
+file {'httpd.conf':
+  ensure  => present,
+  owner   => 'apache',
+  group   => 'apache',
+  content => template('httpd.erb'),
 }
 
 service {'httpd':
