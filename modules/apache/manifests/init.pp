@@ -25,7 +25,6 @@ service {'httpd':
   enable     => 'true',
   hasstatus  => 'true',
   hasrestart => 'true',
-  subscribe  => File['/etc/httpd/conf/httpd.conf']
   }
 }
 
