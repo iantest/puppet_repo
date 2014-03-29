@@ -17,7 +17,7 @@ file {'httpd.conf':
   ensure  => present,
   owner   => 'apache',
   group   => 'apache',
-  content => template('httpd.erb'),
+  content => template("${module_name}/httpd.erb"),
 }
 
 service {'httpd':
